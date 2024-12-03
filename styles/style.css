@@ -61,6 +61,20 @@ body {
       width: 451px;
       font: var(--paragraph);
       padding-left: 16px;
+
+      &::placeholder {
+        color: var(--content-tertiary);
+      }
+      &:hover {
+        border: 2px solid var(--border-secondary);
+      }
+      &:focus {
+        border: 2px solid var(--brand);
+
+        &::placeholder {
+          color: var(--content-primary);
+        }
+      }
     }
     & .btn {
       border-radius: 12px;
@@ -71,6 +85,67 @@ body {
       font: var(--label);
       margin-left: 12px;
       margin-bottom: 40px;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--brand-hover);
+      }
+    }
+
+    & li {
+      list-style: none;
+      align-items: center;
+      width: 627px;
+      height: 49px;
+      margin-left: 2px;
+      border-radius: 12px;
+      background-color: var(--bg-secondary);
+
+      & .custom-checkbox {
+        display: flex;
+        align-items: center;
+        width: 627px;
+        height: 49px;
+        & label {
+          display: flex;
+          align-items: center;
+          height: 49px;
+          width: 560px;
+          font: var(--paragraph);
+        }
+      }
+      & #delete {
+        margin-left: 20px;
+        height: 20px;
+        width: 20px;
+      }
     }
   }
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox input + label:before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border-radius: 6px;
+  background-color: white;
+  border: 2px solid var(--border-primary);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.custom-checkbox input:hover + label:before {
+  border: 2px solid var(--border-secondary);
+}
+
+.custom-checkbox input:checked + label:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOSA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMSA0LjVMMi43NSA2LjI1TDggMC43NSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--brand);
+  border: 2px solid var(--brand);
 }
