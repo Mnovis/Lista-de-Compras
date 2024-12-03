@@ -1,0 +1,37 @@
+:root {
+  /* Backgrounds */
+
+  --bg-primary: #f4f5fb;
+  --bg-secondary: #ffffff;
+
+  /* Colors */
+
+  --brand: #ca3884;
+  --brand-hover: #a52c6b;
+  --danger: #c93847;
+
+  /* Content */
+
+  --content-primary: #080b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
+  --always-white: #ffffff;
+
+  /* Border */
+
+  --border-primary: #d1d5db;
+  --border-secondary: #b9c2d0;
+
+  /* Texts */
+
+  --ff: "Inter", serif;
+  
+  --title: 700 24px/32px var(--ff);
+  --label: 600 16px/20px var(--ff);
+  --paragraph: 500 16px var(--ff);
+  --link: 500 14px/16px var(--ff);
+}
+
+.flex {
+  display: flex;
+}
