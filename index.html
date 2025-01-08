@@ -36,48 +36,25 @@
 
     <div class="form">
       <form>
-        <input type="text" name="input" id="input" class="input" placeholder="Adicione um novo item">
-        <button type="submit" class="btn">Adicionar item</button>
+        <input class="input" placeholder="Adicione um novo item">
+        <button type="button" class="btn">Adicionar item</button>
 
-        <ul>
-          <li>
-            <div class="custom-checkbox">
-              <input type="checkbox" name="chk" id="chk-1">
-              <label for="chk-1">Pão de forma</label>
-              <img id="delete" src="images/delete.svg">
-            </div>
-          </li>
-          <li>
-            <div class="custom-checkbox">
-              <input type="checkbox" name="chk" id="chk-2">
-              <label for="chk-2">Café preto</label>
-              <img id="delete" src="images/delete.svg">
-            </div>
-          </li>
-          <li>
-            <div class="custom-checkbox">
-              <input type="checkbox" name="chk" id="chk-3">
-              <label for="chk-3">Suco de laranja</label>
-              <img id="delete" src="images/delete.svg">
-            </div>
-          </li>
-          <li>
-            <div class="custom-checkbox">
-              <input type="checkbox" name="chk" id="chk-4">
-              <label for="chk-4">Bolacha</label>
-              <img id="delete" src="images/delete.svg">
-            </div>
-          </li>
+        <ul class="list">
+
         </ul>
       </form>
     </div>
 
+
     <div class="alert-container">
       <img src="/images/alert.svg">
       <h2>O item foi removido da lista</h2>
-      <img src="/images/close.svg">
+      <img src="/images/close.svg" onclick="opacity()">
     </div>
   </div>
+
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
